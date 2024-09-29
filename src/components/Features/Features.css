@@ -8,7 +8,7 @@
   
   color: var(--orange);
   display: inline-block;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 1rem;
   clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
 }
 .features .content .box-container {
