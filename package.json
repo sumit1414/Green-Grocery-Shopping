@@ -2,7 +2,7 @@
   "name": "green-grocery",
   "version": "0.1.0",
   "private": true,
-  "_redirects": "/index.html",
+  "_redirects": "/home",
   "dependencies": {
     "16": "^0.0.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
