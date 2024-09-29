@@ -5,8 +5,8 @@
   padding: 2rem 0 3rem 0;
 }
 .features span {
-  background: var(--orange);
-  color: #fff;
+  
+  color: var(--orange);
   display: inline-block;
   padding: 0.5rem 3rem;
   clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);

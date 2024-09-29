@@ -1,17 +1,18 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faShoppingBasket,
   faBars,
   faSearch,
   faShoppingCart,
   faUser,
-} from '@fortawesome/free-solid-svg-icons';
-import SearchForm from './SearchForm';
-import ShoppingCart from './ShoppingCart';
-import UserForm from './UserForm';
-import './Header.css';
-import Navbar from './Navbar';
+} from "@fortawesome/free-solid-svg-icons";
+import SearchForm from "./SearchForm";
+import ShoppingCart from "./ShoppingCart";
+import UserForm from "./UserForm";
+import "./Header.css";
+import Navbar from "./Navbar";
+import logo from "./img/greengrocerylogo.png";
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState(false);
@@ -50,11 +51,10 @@ export default function Header() {
   };
   return (
     <header className="header">
-      <a href="/" className="logo">
-        <i>
-          <FontAwesomeIcon icon={faShoppingBasket} />
-        </i>
-        groco
+      <a href="/" className="logo flex_center">
+        {/* <FontAwesomeIcon icon={faShoppingBasket} /> */}
+        <img src={logo} className="logo_css" />
+        <p className="fsize16px"> Green Grocery</p>
       </a>
       <Navbar active={activeMenu} />
       <div className="icons">

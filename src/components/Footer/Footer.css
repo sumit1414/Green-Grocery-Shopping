@@ -90,3 +90,19 @@
 .footer .credits span {
   color: var(--orange);
 }
+.logo_css2{
+  width: 100px;
+  object-fit: contain;
+  height: 100px !important;
+}
+.flex_center{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.fsize16px{
+  font-size: 16px;
+}
+.colortext{
+  columns: var(--black) !important;
+}

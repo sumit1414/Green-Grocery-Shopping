@@ -1,35 +1,33 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
   faEnvelope,
   faMapMarkerAlt,
   faPhone,
   faShoppingBasket,
-} from '@fortawesome/free-solid-svg-icons';
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
   faInstagram,
   faLinkedin,
   faTwitter,
-} from '@fortawesome/free-brands-svg-icons';
-import './Footer.css';
-
+} from "@fortawesome/free-brands-svg-icons";
+import "./Footer.css";
+import logo from "../Header/img/greengrocerylogo.png";
 export default function Footer() {
   return (
     <footer className="footer" id="footer">
       <div className="box-container">
         <div className="box">
-          <FontAwesomeIcon icon={['fas', 'faUser']} />
-          <h3>
-            groco
-            <i>
-              <FontAwesomeIcon icon={faShoppingBasket} />
-            </i>
-          </h3>
+          <a href="/" className="logo flex_center">
+            {/* <FontAwesomeIcon icon={faShoppingBasket} /> */}
+            <img src={logo} className="logo_css2" />
+            <p className="fsize16px colortext"> Green Grocery</p>
+          </a>
           <p>
-            Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Natus,
-            Laudantium?
+            Lorem ipsum may be used as a placeholder before the final copy is
+            available.
           </p>
           <div className="share">
             <a href="/">
@@ -60,25 +58,25 @@ export default function Footer() {
             <i>
               <FontAwesomeIcon icon={faPhone} />
             </i>
-            +123 456 7890
+            +91 9833452345
           </a>
           <a href="/" className="links">
             <i>
               <FontAwesomeIcon icon={faPhone} />
             </i>
-            +111 222 3333
+            +91 3452341235
           </a>
           <a href="/" className="links" id="emailLink">
             <i>
               <FontAwesomeIcon icon={faEnvelope} />
             </i>
-            name@email.com
+            sakshijaiswal@gmail.com
           </a>
           <a href="/" className="links">
             <i>
               <FontAwesomeIcon icon={faMapMarkerAlt} />
             </i>
-            pernambuco, brazil
+            Kandivali, Mumbai
           </a>
         </div>
         <div className="box">
@@ -132,11 +130,7 @@ export default function Footer() {
       </div>
       <div className="credits">
         <p>
-          Created By
-          {' '}
-          <span>Mr. Web Designer</span>
-          {' '}
-          | All Rights Reserved
+          Created By <span>Mis. Sakshi Jaiswal </span> | All Rights Reserved
         </p>
       </div>
     </footer>
